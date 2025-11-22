@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
 // ⚠️ ATENÇÃO: COLE SUA CHAVE API NOVA DENTRO DAS ASPAS ABAIXO
-const API_KEY = "API_KEY"; 
+const API_KEY = "AIzaSyCqbACVKIWerXq5Ybl5DjjdM5JfT2mThzE"; 
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
@@ -80,3 +80,4 @@ btnCopiar.addEventListener('click', () => {
     });
 
 });
+
