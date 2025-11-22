@@ -23,7 +23,7 @@ O projeto segue estritamente as regras da Imersão, utilizando tecnologias funda
 *   **Prompt Engineering:** O diferencial do projeto. Instruímos a IA a retornar o conteúdo já formatado em tags HTML, facilitando a exibição segura e estilizada.
 
 ## 🚀 Como testar
-1. Acesse o link: [COLE O LINK DO SEU GITHUB PAGES AQUI]
+1. Acesse o link: https://bookerr1.github.io/mento-ai-gemini/
 2. Insira um tema (ex: "Culinária Japonesa").
 3. Clique em "Gerar Roteiro" e veja a mágica acontecer!
 
