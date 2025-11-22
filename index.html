@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mento.AI - Mentor Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte moderna para dar acabamento profissional -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Fundo animado -->
+    <div class="bg-animation"></div>
+
+    <div class="main-wrapper">
+        <main class="glass-card">
+            <header>
+                <span class="badge">Imersão Dev + Google</span>
+                <h1>🧠 Mento.AI</h1>
+                <p>Seu plano de estudos personalizado com curadoria de IA.</p>
+            </header>
+
+            <div class="form-grid">
+                <div class="input-box full-width">
+                    <label>🎯 O que você quer aprender?</label>
+                    <input type="text" id="assunto" placeholder="Ex: Python, Finanças Pessoais, Tocar Violão...">
+                </div>
+
+                <div class="input-box">
+                    <label>📊 Nível Atual</label>
+                    <select id="nivel">
+                        <option value="Iniciante">Iniciante (do zero)</option>
+                        <option value="Básico">Básico (sei pouco)</option>
+                        <option value="Intermediário">Intermediário</option>
+                        <option value="Avançado">Avançado</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label>⏰ Tempo Livre</label>
+                    <select id="tempo">
+                        <option value="Rápido (15min/dia)">Rápido (15 min/dia)</option>
+                        <option value="Padrão (1h/dia)">Padrão (1h/dia)</option>
+                        <option value="Intenso (3h+/dia)">Intenso (3h+/dia)</option>
+                        <option value="Só Finais de Semana">Só Finais de Semana</option>
+                    </select>
+                </div>
+
+                <div class="input-box full-width">
+                    <label>🎭 Personalidade do Mentor</label>
+                    <select id="personalidade">
+                        <option value="Motivador e Energético">💪 Coach Motivador</option>
+                        <option value="Sábio e Calmo">🧘 Mestre Zen</option>
+                        <option value="Engraçado e Descontraído">😂 Tiozão Engraçado</option>
+                        <option value="Técnico e Direto">🤓 Professor Técnico</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="btn-gerar" class="glow-button">
+                <span>Gerar Roteiro de Estudos ✨</span>
+            </button>
+
+            <!-- Área de Carregamento -->
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Consultando a base de conhecimento do Gemini...</p>
+            </div>
+
+            <!-- Resultado -->
+            <div id="resultado-container" class="hidden fade-in">
+                <div class="result-header">
+                    <h3>🚀 Seu Caminho de Aprendizado</h3>
+                    <button id="btn-copiar" title="Copiar Texto">📋 Copiar</button>
+                </div>
+                <!-- A resposta da IA entra aqui já formatada -->
+                <div id="conteudo-resposta" class="markdown-body"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Desenvolvido com 💙 e <strong>Google Gemini</strong></p>
+        </footer>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
